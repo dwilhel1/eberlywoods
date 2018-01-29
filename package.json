@@ -2,12 +2,11 @@
   "name": "eberlywoods",
   "version": "0.1.0",
   "description": "Eberlywoods.com main website",
-  "main": "index.js",
+  "main": "src/entry/app.jsx",
   "scripts": {
     "lint": "eslint .",
     "start": "webpack-dev-server",
-    "build": "webpack --progress --colors",
-    "test": "jest --coverage"
+    "build": "webpack --progress --colors"
   },
   "repository": {
     "type": "git",
@@ -20,7 +19,11 @@
   },
   "homepage": "https://github.com/dwilhel1/eberlywoods#readme",
   "devDependencies": {
+    "@babel/core": "^7.0.0-beta.38",
+    "@babel/preset-env": "^7.0.0-beta.38",
+    "babel-loader": "^8.0.0-beta.0",
     "eslint": "^4.16.0",
-    "webpack": "^3.10.0"
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.11.1"
   }
 }
