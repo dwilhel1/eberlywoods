@@ -4,7 +4,10 @@
   "description": "Eberlywoods.com main website",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint .",
+    "start": "webpack-dev-server",
+    "build": "webpack --progress --colors",
+    "test": "jest --coverage"
   },
   "repository": {
     "type": "git",
@@ -17,6 +20,7 @@
   },
   "homepage": "https://github.com/dwilhel1/eberlywoods#readme",
   "devDependencies": {
+    "eslint": "^4.16.0",
     "webpack": "^3.10.0"
   }
 }
