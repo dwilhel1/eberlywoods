@@ -1,0 +1,22 @@
+{
+  "name": "eberlywoods",
+  "version": "0.1.0",
+  "description": "Eberlywoods.com main website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dwilhel1/eberlywoods.git"
+  },
+  "author": "dwilhel1@hawk,iit,edu",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/dwilhel1/eberlywoods/issues"
+  },
+  "homepage": "https://github.com/dwilhel1/eberlywoods#readme",
+  "devDependencies": {
+    "webpack": "^3.10.0"
+  }
+}
