@@ -1,65 +1,102 @@
-// https://material.io/color/#!/?view.left=0&view.right=0&primary.color=43A047 */
+// https://material.io/color/#!/?view.left=0&view.right=0&primary.color=43A047
 $invisible: rgba(0, 0 , 0 , 0);
 $light-grey: #d3d3d3;
+$white: #fff;
 $primary-green: #43a047;
+$dark-green: #00701a;
 
 * {
+  box-sizing: border-box;
   font-family: 'Raleway', 'Helvetica Neue', Arial, sans-serif;
 }
 
 html {
   height: 100%;
-  width: 100%;
 }
 
 body {
-  margin: 0;
-  min-height: 100%;
   padding: 0;
+  margin: 0;
+  height: 100%;
+  min-height: 100%;
+}
+
+.container {
+  display: grid;
+  grid-template: 75px 300px 1fr 300px 1fr 75px / 1fr;
+  height: 100%;
+  min-height: 100%;
 }
 
 .header {
-  border-bottom: 1px solid $light-grey;
+  position: sticky;
+  top: 0;
+  background-color: rgba(255,255,255,.9);
+  align-items: center;
+  display: flex;
+  grid-template-areas: 'nav-title nav-menu';
+  grid-template-columns: 50% 50%;
+
+  // border-bottom: 1px solid $light-grey;
   color: $primary-green;
-  height: 75px;
-  margin: 0;
-  max-width: 100%;
-}
+  user-select: none;
 
-.brand-title {
-  float: left;
-  font-size: x-large;
-  min-height: 100%;
-  margin-left: 10px;
-}
-
-.nav-menu {
-  margin-right: 10px;
-  margin-top: 15px;
-  float: right;
-  list-style: none;
-  text-decoration: none;
-  ul {
-    margin: 0;
-    min-height: 100%;
-    line-height: 40px;
+  .nav-title {
+    grid-area: nav-title;
+    flex: 1;
+    font-size: 40px;
   }
-  li {
-    border: 1px solid $invisible;
-    border-radius: 5px;
-    padding-left: 5px;
-    padding-right: 5px;
-    text-align: center;
-    display: inline-block;
-    margin: 5px;
-    min-height: 100%;
-    transition: 0.2s border ease-in, 0.1s color ease-in, 0.1s background-color ease-in;
-    &:hover {
-      border: 1px solid $light-grey;
-    }
-    &:active {
-      color: white;
-      background-color: $primary-green;
+
+  .nav-menu {
+    grid-area: nav-menu;
+
+    li {
+      display: inline;
+      padding: 10px;
+      margin: 5px;
+
+      border: 1px solid $invisible;
+      border-radius: 5px;
+      transition: 0.2s border ease-in, 0.1s color ease-in, 0.1s background-color ease-in;
+      &:hover {
+        border: 1px solid $light-grey;
+      }
+      &:active {
+        color: white;
+        background-color: $primary-green;
+      }
     }
   }
+}
+
+.sustainable-forestry {
+  background: url('../images/forest_background_large.jpeg') fixed;
+  background-size: cover;
+  align-content: center;
+  justify-items: center;
+}
+
+.business-services {
+  background: url('../images/wood_grain_large.jpeg') fixed;
+  background-size: cover;
+  align-content: center;
+  justify-items: center;
+}
+
+.canvas-text {
+  color: $white;
+  font-size: 72px;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.description {
+  padding: 10px;
+}
+
+.footer {
+  //border-top: 1px solid $light-grey;
+  background-color: $dark-green;
+  color: $white;
+  align-self: end;
 }
