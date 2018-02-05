@@ -10,6 +10,11 @@ $dark-green: #00701a;
   font-family: 'Raleway', 'Helvetica Neue', Arial, sans-serif;
 }
 
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 html {
   height: 100%;
 }
@@ -100,7 +105,7 @@ body {
 
 .canvas-text {
   color: $white;
-  font-size: 5em;
+  font-size: 4em;
   font-weight: bolder;
   text-align: center;
 }
