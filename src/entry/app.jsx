@@ -4,6 +4,10 @@ import ReactDOM from 'react-dom';
 import Header from '../components/layout/Header';
 import Footer from '../components/layout/Footer';
 
+import nwoa_logo from '../images/nwoa_logo.svg';
+import michigan_icon from '../images/michigan_icon-2.svg';
+import green_tag_logo from '../images/green_tag_certification_logo.svg';
+
 import '../styles/app.scss';
 
 ReactDOM.render(
@@ -14,7 +18,7 @@ ReactDOM.render(
         <span>Sustainable Forestry</span>
       </div>
     </div>
-    <div className={'description'}>
+    <div className={'description-grid'}>
       <div className={'organization text'}>
         <h2>Who are we?</h2>
         <p>
@@ -26,17 +30,19 @@ ReactDOM.render(
           improvement harvests are conducted annually to remove sick, dead, crowded or invasive species, subsequently
           providing a variety of timber and other ag-forestry grown products.
         </p>
+      </div>
+      <div className={'services text'}>
+        <h2>Lorem ipsum?</h2>
         <p>
-          Our products are only from locally grown, truly sustainable forests or urban timber harvests.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque placerat consequat nisi at gravida. Sed
+          fringilla pulvinar ligula, id consectetur leo elementum finibus. Integer commodo erat at ligula tristique,
+          vel hendrerit tellus consectetur.
+        </p>
+        <p>
+          Proin non libero metus. Nulla condimentum, libero in malesuada lacinia, metus neque dapibus sem, vitae cursus
+          erat ipsum sed justo. Sed rutrum libero urna, non vehicula lorem pellentesque quis.
         </p>
       </div>
-    </div>
-    <div className={'business-services canvas'}>
-      <div className={'canvas-text'}>
-        <span>Lumber Supply</span>
-      </div>
-    </div>
-    <div className={'description'}>
       <div className={'services text'}>
         <h2>What do we offer?</h2>
         <p>
@@ -47,6 +53,28 @@ ReactDOM.render(
           All of the lumber services are log-run in order to provide the finest boards from the tree with consistent
           color-matching and book-matching. Boards are numbered as they finish the milling
         </p>
+        <p>
+          Our products are only from locally grown, truly sustainable forests or urban timber harvests.
+        </p>
+      </div>
+    </div>
+    <div className={'business-services canvas'}>
+      <div className={'canvas-text'}>
+        <span>Lumber Supply</span>
+      </div>
+    </div>
+    <div className={'image-grid'}>
+      <div className={'image-container'}>
+        <img src={nwoa_logo} className={'image'}/>
+        <p>Member of National Woodland Owners Association</p>
+      </div>
+      <div className={'image-container'}>
+        <img src={michigan_icon} className={'image'}/>
+        <p>Founded and based in Southwest Michigan</p>
+      </div>
+      <div className={'image-container'}>
+        <img src={green_tag_logo} className={'image'}/>
+        <p>We maintain Green Tag environmental certification</p>
       </div>
     </div>
     <Footer />
