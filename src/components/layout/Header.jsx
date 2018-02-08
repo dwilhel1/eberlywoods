@@ -1,10 +1,13 @@
 import React from 'react';
+import brand_logo_letter from '../../images/eberlywoods_brand_logo_letter.svg'
+import brand_logo_full from '../../images/eberlywoods_brand_logo.svg'
 
 const Header = () => {
   return (
     <header className={'header'}>
       <div className={'nav-title row'}>
-        <a>EberlyWoods</a>
+        <img src={brand_logo_full} className={'brand_logo_full'} alt={'EberlyWoods'} />
+        <img src={brand_logo_letter} className={'brand_logo_letter'} />
       </div>
       <div className={'nav-menu row'}>
         <ul>

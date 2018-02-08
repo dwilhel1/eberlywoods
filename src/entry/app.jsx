@@ -32,18 +32,6 @@ ReactDOM.render(
         </p>
       </div>
       <div className={'services text'}>
-        <h2>Lorem ipsum?</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque placerat consequat nisi at gravida. Sed
-          fringilla pulvinar ligula, id consectetur leo elementum finibus. Integer commodo erat at ligula tristique,
-          vel hendrerit tellus consectetur.
-        </p>
-        <p>
-          Proin non libero metus. Nulla condimentum, libero in malesuada lacinia, metus neque dapibus sem, vitae cursus
-          erat ipsum sed justo. Sed rutrum libero urna, non vehicula lorem pellentesque quis.
-        </p>
-      </div>
-      <div className={'services text'}>
         <h2>What do we offer?</h2>
         <p>
           Services available include quartersawing, slabbing, and flitch cutting up to 56" wide. We also have access to

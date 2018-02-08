@@ -1,6 +1,7 @@
 // https://material.io/color/#!/?view.left=0&view.right=0&primary.color=43A047
 $invisible: rgba(0, 0 , 0 , 0);
 $light-grey: #d3d3d3;
+$transparent-white: rgba(255, 255, 255, .9);
 $white: #fff;
 $primary-green: #43a047;
 $dark-green: #00701a;
@@ -34,22 +35,33 @@ body {
 }
 
 .header {
-  position: sticky;
-  top: 0;
-  background-color: rgba(255,255,255,.9);
   align-items: center;
+  background-color: $transparent-white
   display: flex;
   grid-template-areas: 'nav-title nav-menu';
   grid-template-columns: 50% 50%;
+  position: sticky;
+  top: 0;
 
   border-bottom: 1px solid $light-grey;
   color: $primary-green;
   user-select: none;
 
+  .brand_logo_letter {
+    display: none;
+  }
+
+  .brand_logo_full {
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
   .nav-title {
     grid-area: nav-title;
     flex: 1;
     font-size: 40px;
+    justify-items: center;
   }
 
   .nav-menu {
@@ -79,28 +91,37 @@ body {
   @media (max-width: 960px) {
     display: block;
     text-align: center;
+
+    .brand_logo_full {
+      display: none;
+    }
+
+    .brand_logo_letter {
+      display: inline;
+      padding-top: 10px;
+    }
   }
 }
 
 .sustainable-forestry {
+  align-content: center;
   background: url('../images/forest_background_large.jpeg') fixed;
   background-size: cover;
-  align-content: center;
   justify-items: center;
 }
 
 .business-services {
+  align-content: center;
   background: url('../images/wood_grain_large.jpeg') fixed;
   background-size: cover;
-  align-content: center;
   justify-items: center;
 }
 
 .canvas {
+  align-items: center;
   display: grid;
   grid-template-rows: 1fr;
   justify-items: center;
-  align-items: center;
 }
 
 .canvas-text {
@@ -114,38 +135,37 @@ body {
   align-items: start;
   display: grid;
 
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   justify-items: center;
 }
 
 .text {
-  max-width: 500px;
+  max-width: 600px;
   padding: 10px;
   text-align: center;
 }
 
 .image {
-  max-height: 200px;
-  max-width: 200px;
-  min-height: 200px;
+  max-height: 250px;
+  max-width: 250px;
+  min-height: 250px;
 }
 
 .image-grid {
+  align-items: end;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   justify-items: center;
   text-align: center;
-  align-items: end;
 }
 
 .image-container {
-  max-width: 200px;
+  max-width: 250px;
 }
 
 .footer {
-  border-top: 1px solid $light-grey;
-  // background-color: $dark-green;
-  color: $dark-green;
   align-self: end;
+  border-top: 1px solid $light-grey;
+  color: $dark-green;
 }
