@@ -5,6 +5,7 @@ $transparent-white: rgba(255, 255, 255, .9);
 $white: #fff;
 $primary-green: #43a047;
 $dark-green: #00701a;
+$black: #000;
 
 * {
   box-sizing: border-box;
@@ -158,6 +159,10 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   justify-items: center;
   text-align: center;
+  a {
+    text-decoration: none;
+    color: $black;
+  }
 }
 
 .image-container {

@@ -46,18 +46,24 @@ const IndexContent = () => {
         </div>
       </div>
       <div className={'image-grid'}>
-        <div className={'image-container'}>
-          <img src={nwoa_logo} className={'image'}/>
-          <p>Member of National Woodland Owners Association</p>
-        </div>
-        <div className={'image-container'}>
-          <img src={michigan_icon} className={'image'}/>
-          <p>Founded and based in Southwest Michigan</p>
-        </div>
-        <div className={'image-container'}>
-          <img src={green_tag_logo} className={'image'}/>
-          <p>We maintain Green Tag environmental certification</p>
-        </div>
+        <a href={'http://woodlandowners.org/'}>
+          <div className={'image-container'}>
+            <img src={nwoa_logo} className={'image'}/>
+            <p>Member of National Woodland Owners Association</p>
+          </div>
+        </a>
+        <a href={'https://www.michigan.org/regions/southwest'}>
+          <div className={'image-container'}>
+            <img src={michigan_icon} className={'image'}/>
+            <p>Founded and based in Southwest Michigan</p>
+          </div>
+        </a>
+        <a href={'http://www.globalgreentag.com/'}>
+          <div className={'image-container'}>
+              <img src={green_tag_logo} className={'image'}/>
+              <p>We maintain Green Tag environmental certification</p>
+          </div>
+        </a>
       </div>
     </>
   );
