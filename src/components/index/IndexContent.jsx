@@ -9,7 +9,7 @@ const IndexContent = () => {
     <>
       <div className={'sustainable-forestry canvas'}>
         <div className={'canvas-text'}>
-          <span>Sustainable Forestry</span>
+          <h1>Sustainable Forestry</h1>
         </div>
       </div>
       <div className={'description-grid'}>
@@ -42,7 +42,7 @@ const IndexContent = () => {
       </div>
       <div className={'business-services canvas'}>
         <div className={'canvas-text'}>
-          <span>Lumber Supply</span>
+          <h1>Lumber Supply</h1>
         </div>
       </div>
       <div className={'image-grid'}>
