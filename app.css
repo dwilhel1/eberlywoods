@@ -147,6 +147,9 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   justify-items: center;
   text-align: center; }
+  .image-grid a {
+    text-decoration: none;
+    color: #000; }
 
 .image-container {
   max-width: 250px; }
