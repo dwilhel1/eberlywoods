@@ -1,6 +1,6 @@
 import React from 'react';
-import brand_logo_letter from '../../images/eberlywoods_brand_logo_letter.svg'
-import brand_logo_full from '../../images/eberlywoods_brand_logo.svg'
+import brand_logo_letter from '../../images/branding/eberlywoods_brand_logo_letter.svg'
+import brand_logo_full from '../../images/branding/eberlywoods_brand_logo.svg'
 
 const Header = () => {
   return (

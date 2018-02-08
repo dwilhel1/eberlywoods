@@ -1,8 +1,8 @@
 import React from 'react';
 
-import nwoa_logo from '../../images/nwoa_logo.svg';
-import michigan_icon from '../../images/michigan_icon-2.svg';
-import green_tag_logo from '../../images/green_tag_certification_logo.svg';
+import nwoa_logo from '../../images/icons/info/nwoa_logo.svg';
+import michigan_icon from '../../images/icons/info/michigan_icon.svg';
+import green_tag_logo from '../../images/icons/info/green_tag_certification_logo.svg';
 
 const IndexContent = () => {
   return (
