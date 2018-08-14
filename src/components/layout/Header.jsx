@@ -6,8 +6,8 @@ const Header = () => {
   return (
     <header className={'header'}>
       <div className={'nav-title row'}>
-        <img src={brand_logo_full} className={'brand_logo_full'} alt={'EberlyWoods'} />
-        <img src={brand_logo_letter} className={'brand_logo_letter'} />
+        <img src={brand_logo_full} className={'brand_logo_full'} alt={'EberlyWoods Full Logo'} />
+        <img src={brand_logo_letter} className={'brand_logo_letter'} alt={'EberlyWoods E Logo'}/>
       </div>
       <div className={'nav-menu row'}>
         <ul>
