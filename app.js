@@ -4,6 +4,7 @@ const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 const sassMiddleware = require('node-sass-middleware');
+const hbs = require('hbs');
 
 const indexRouter = require('./routes/index');
 const galleryRouter = require('./routes/gallery');
@@ -15,6 +16,12 @@ const app = express();
 
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
+
+hbs.registerHelper('currentYear', function() {
+  const year = new Date().getFullYear();
+
+  return new hbs.SafeString(year);
+});
 
 app.use(logger('dev'));
 app.use(express.json());
