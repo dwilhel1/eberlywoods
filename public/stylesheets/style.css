@@ -16,10 +16,9 @@ body {
   min-height: 100%;
   padding: 0; }
 
-a,
-:visited {
-  text-decoration: none;
-  color: #43a047; }
+a {
+  color: #43a047;
+  text-decoration: none; }
 
 .container {
   display: grid;
