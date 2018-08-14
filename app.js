@@ -6,6 +6,10 @@ const logger = require('morgan');
 const sassMiddleware = require('node-sass-middleware');
 
 const indexRouter = require('./routes/index');
+const galleryRouter = require('./routes/gallery');
+const servicesRouter = require('./routes/services');
+const aboutRouter = require('./routes/about');
+const contactRouter = require('./routes/contact');
 
 const app = express();
 
@@ -25,6 +29,10 @@ app.use(sassMiddleware({
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
+app.use('/gallery', galleryRouter);
+app.use('/services', servicesRouter);
+app.use('/about', aboutRouter);
+app.use('/contact', contactRouter);
 
 // HTTP 404 Handler
 app.use(function(req, res, next) {
