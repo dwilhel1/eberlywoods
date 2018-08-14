@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
-  font-family: 'Raleway', 'Helvetica Neue', Arial, sans-serif; }
+  font-family: 'Raleway', 'Helvetica Neue', Arial, sans-serif;
+  user-select: none; }
 
 html,
 body {
@@ -122,8 +123,7 @@ a {
   justify-items: center;
   text-align: center; }
   .image-grid a {
-    color: #000;
-    text-decoration: none; }
+    color: #000; }
 
 .image-container {
   max-width: 250px; }
