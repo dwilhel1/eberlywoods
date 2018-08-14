@@ -1,0 +1,132 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Raleway', 'Helvetica Neue', Arial, sans-serif; }
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden; }
+
+html {
+  height: 100%; }
+
+body {
+  height: 100%;
+  margin: 0;
+  min-height: 100%;
+  padding: 0; }
+
+.container {
+  display: grid;
+  grid-template: auto 300px auto 300px auto auto / 1fr;
+  height: 100%;
+  min-height: 100%; }
+
+.header {
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-bottom: 1px solid #d3d3d3;
+  color: #43a047;
+  display: flex;
+  grid-template-areas: 'nav-title nav-menu';
+  grid-template-columns: 50% 50%;
+  position: sticky;
+  top: 0;
+  user-select: none; }
+  .header .brand-logo-letter {
+    display: none; }
+  .header .brand-logo-full {
+    display: flex;
+    padding-bottom: 10px;
+    padding-top: 10px; }
+  .header .nav-title {
+    flex: 1;
+    font-size: 40px;
+    grid-area: nav-title;
+    justify-items: center; }
+  .header .nav-menu {
+    grid-area: nav-menu; }
+    .header .nav-menu ul {
+      padding: 0; }
+    .header .nav-menu li {
+      border: 1px solid rgba(0, 0, 0, 0);
+      border-radius: 5px;
+      display: inline;
+      margin: 5px;
+      padding: 10px;
+      transition: .2s border ease-in, .1s color ease-in, .1s background-color ease-in; }
+      .header .nav-menu li:hover {
+        border: 1px solid #d3d3d3; }
+      .header .nav-menu li:active {
+        background-color: #43a047;
+        color: #fff; }
+  @media (max-width: 960px) {
+    .header {
+      display: block;
+      text-align: center; }
+      .header .brand-logo-full {
+        display: none; }
+      .header .brand-logo-letter {
+        display: inline;
+        padding-top: 10px; } }
+
+.sustainable-forestry {
+  align-content: center;
+  background: url("../images/backgrounds/forest_background_large.jpeg") fixed;
+  background-size: cover;
+  justify-items: center; }
+
+.business-services {
+  align-content: center;
+  background: url("../images/backgrounds/wood_grain_large.jpeg") fixed;
+  background-size: cover;
+  justify-items: center; }
+
+.canvas {
+  align-items: center;
+  display: grid;
+  grid-template-rows: 1fr;
+  justify-items: center; }
+
+.canvas-text {
+  color: #fff;
+  font-size: 2em;
+  font-weight: bolder;
+  text-align: center; }
+
+.description-grid {
+  align-items: start;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  justify-items: center; }
+
+.text {
+  max-width: 600px;
+  padding: 10px;
+  text-align: center; }
+
+.image {
+  max-height: 250px;
+  max-width: 250px;
+  min-height: 250px; }
+
+.image-grid {
+  align-items: end;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  justify-items: center;
+  text-align: center; }
+  .image-grid a {
+    color: #000;
+    text-decoration: none; }
+
+.image-container {
+  max-width: 250px; }
+
+.footer {
+  align-self: end;
+  border-top: 1px solid #d3d3d3;
+  color: #00701a; }
+
+/*# sourceMappingURL=style.css.map */
