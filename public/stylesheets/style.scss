@@ -48,8 +48,7 @@ a {
   border-bottom: 1px solid $light-grey;
   color: $primary-green;
   display: flex;
-  grid-template-areas: 'nav-title nav-menu';
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 1fr 1fr;
   position: sticky;
   top: 0;
   user-select: none;
@@ -67,13 +66,10 @@ a {
   .nav-title {
     flex: 1;
     font-size: 40px;
-    grid-area: nav-title;
     justify-items: center;
 }
 
   .nav-menu {
-    grid-area: nav-menu;
-
     ul {
       padding: 0;
     }
@@ -114,15 +110,13 @@ a {
 
 .sustainable-forestry {
   align-content: center;
-  background: url('../images/backgrounds/forest_background_large.jpeg') fixed;
-  background-size: cover;
+  background: url('../images/backgrounds/forest_background_large.jpeg') fixed center / cover;
   justify-items: center;
 }
 
 .business-services {
   align-content: center;
-  background: url('../images/backgrounds/wood_grain_large.jpeg') fixed;
-  background-size: cover;
+  background: url('../images/backgrounds/wood_grain_large.jpeg') fixed center / cover;
   justify-items: center;
 }
 
@@ -181,4 +175,10 @@ a {
   align-self: end;
   border-top: 1px solid $light-grey;
   color: $dark-green;
+}
+
+.footer-copyright {
+  color: $black;
+  font-size: 12px;
+  margin: 10px;
 }
