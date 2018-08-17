@@ -3,47 +3,52 @@
   <head>
     <title>{{title}}</title>
 
-    <meta charset="UTF-8">
+    <meta charset='UTF-8'>
 
-    <meta name="description" content="EberlyWoods is a sustainable forestry business offering green lumber supply and wood services">
-    <meta name="keywords" content="wood,lumber,supply,forestry,green">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
-    <meta name="theme-color" content="#00701a">
+    <meta name='description' content='EberlyWoods is a sustainable forestry business offering green lumber supply and wood services'>
+    <meta name='keywords' content='wood,lumber,supply,forestry,green'>
+    <meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no'>
+    <meta name='theme-color' content='#00701a'>
 
-    <meta property="og:title" content="EberlyWoods">
-    <meta property="og:description" content="Sustainable forestry business offering a variety of lumber products and services.">
-    <meta property="og:image" content="https://eberlywoods-stable.azurewebsites.net/de92185cb45cef5dbdec063746ced31f.jpeg">
-    <meta property="og:url" content="https://eberlywoods-stable.azurewebsites.net/">
+    <meta property='og:title' content='EberlyWoods'>
+    <meta property='og:description' content='Sustainable forestry business offering a variety of lumber products and services.'>
+    <meta property='og:image' content='https://eberlywoods-stable.azurewebsites.net/de92185cb45cef5dbdec063746ced31f.jpeg'>
+    <meta property='og:url' content='https://eberlywoods-stable.azurewebsites.net/'>
 
     <link rel='stylesheet' href='stylesheets/style.css' />
   </head>
   <body>
-    <div class="container">
+    <div class='container'>
       <header class='header'>
-        <div class='nav-title row'>
-          <a href="/"><img src='images/branding/eberlywoods_brand_logo.svg' class='brand-logo-full' alt='EberlyWoods Full Logo' /></a>
-          <a href="/"><img src='images/branding/eberlywoods_brand_logo_letter.svg' class='brand-logo-letter' alt='EberlyWoods E Logo'/></a>
+        <div class='nav-title'>
+          <a href='/'><img src='images/branding/eberlywoods_brand_logo.svg' class='brand-logo-full' alt='EberlyWoods Full Logo' /></a>
+          <a href='/'><img src='images/branding/eberlywoods_brand_logo_letter.svg' class='brand-logo-letter' alt='EberlyWoods E Logo'/></a>
         </div>
-        <div class='nav-menu row'>
+        <div class='nav-menu'>
           <ul>
             <li>
-              <a href="/gallery">Gallery</a>
+              <a href='/gallery'>Gallery</a>
             </li>
             <li>
-              <a href="/services">Services</a>
+              <a href='/services'>Services</a>
             </li>
             <li>
-              <a href="/about">About</a>
+              <a href='/about'>About</a>
             </li>
             <li>
-              <a href="/contact">Contact</a>
+              <a href='/contact'>Contact</a>
             </li>
           </ul>
         </div>
+        <!-- <div class='nav-mission'>
+          <p class='nav-mission-text'>We live in and maintain forests for our children's future.</p>
+          <p class='nav-mission-text'>We are passionate about living in Science and Nature sustainably.</p>
+          <p class='nav-mission-text'>We believe in living sustainably. Do you want to join us?</p>
+        </div> -->
       </header>
       {{{body}}}
       <footer class='footer'>
-        <p>Copyright © {{currentYear}} EberlyWoods Inc. All rights reserved.</p>
+        <p class='footer-copyright'>Copyright © {{currentYear}} EberlyWoods Inc. All rights reserved.</p>
       </footer>
     </div>
   </body>
