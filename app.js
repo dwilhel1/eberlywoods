@@ -17,7 +17,7 @@ const app = express();
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
 
-hbs.registerHelper('currentYear', function() {
+hbs.registerHelper('currentYear', () => {
   const year = new Date().getFullYear();
 
   return new hbs.SafeString(year);
@@ -31,7 +31,7 @@ app.use(sassMiddleware({
   src: path.join(__dirname, 'public'),
   dest: path.join(__dirname, 'public'),
   indentedSyntax: false, // true = .sass and false = .scss
-  sourceMap: true
+  sourceMap: true,
 }));
 app.use(express.static(path.join(__dirname, 'public')));
 
@@ -42,12 +42,12 @@ app.use('/about', aboutRouter);
 app.use('/contact', contactRouter);
 
 // HTTP 404 Handler
-app.use(function(req, res, next) {
+app.use((req, res, next) => {
   next(createError(404));
 });
 
 // Error Handler
-app.use(function(err, req, res, next) {
+app.use((err, req, res, next) => {
   // set locals, only providing error in development
   res.locals.message = err.message;
   res.locals.error = req.app.get('env') === 'development' ? err : {};
