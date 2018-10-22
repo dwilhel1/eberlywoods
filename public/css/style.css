@@ -59,8 +59,9 @@ a {
     .header .nav-menu li:hover {
       border: 1px solid #d3d3d3; }
     .header .nav-menu li:active {
-      background-color: #43a047;
-      color: #fff; }
+      border: 1px solid #43a047; }
+      .header .nav-menu li:active a {
+        color: #43a047; }
   @media (max-width: 960px) {
     .header {
       display: block;
@@ -72,16 +73,18 @@ a {
         padding-top: 10px; } }
 
 .sustainable-forestry {
-  align-content: center;
-  background: url("../img/backgrounds/forest_background_large.jpeg") fixed center/cover;
-  justify-items: center; }
+  background: url("../img/backgrounds/forest_background_large.jpeg") fixed center/cover; }
 
 .business-services {
-  align-content: center;
-  background: url("../img/backgrounds/wood_grain_large.jpeg") fixed center/cover;
-  justify-items: center; }
+  background: url("../img/backgrounds/wood_grain_large.jpeg") fixed center/cover; }
+
+.contact-us {
+  background-image: url("../img/backgrounds/rampart_lakes_forest_sunset.jpg");
+  background-size: cover;
+  background-position: center; }
 
 .canvas {
+  align-content: center;
   align-items: center;
   display: grid;
   grid-template-rows: 1fr;
@@ -121,6 +124,49 @@ a {
 
 .image-container {
   max-width: 250px; }
+
+.contact-us-main {
+  display: grid;
+  text-align: center;
+  align-content: center;
+  justify-content: center;
+  margin: 10px; }
+
+.horizontal-line-short {
+  width: 100px;
+  height: 1px;
+  margin: 10px;
+  background-color: #d3d3d3;
+  justify-self: center; }
+
+.contact-us-form {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-areas: "first last" "email phone" "message message";
+  grid-template-columns: minmax(100px, 1fr) minmax(100px, 1fr);
+  grid-template-rows: 50px 50px 300px;
+  justify-content: center; }
+  .contact-us-form input, .contact-us-form textarea {
+    outline: none;
+    font-size: medium;
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid #d3d3d3;
+    resize: none; }
+  .contact-us-form input:focus:required:invalid {
+    border: 1px solid darkred; }
+  .contact-us-form input:valid {
+    border: 1px solid #00701a; }
+  .contact-us-form #firstName {
+    grid-area: first; }
+  .contact-us-form #lastName {
+    grid-area: last; }
+  .contact-us-form #emailAddress {
+    grid-area: email; }
+  .contact-us-form #phoneNumber {
+    grid-area: phone; }
+  .contact-us-form #contactMessage {
+    grid-area: message; }
 
 .footer {
   align-self: end;

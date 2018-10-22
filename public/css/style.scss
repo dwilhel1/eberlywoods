@@ -87,8 +87,10 @@ a {
       }
 
       &:active {
-        background-color: $primary-green;
-        color: $white;
+        border: 1px solid $primary-green;
+        a {
+          color: $primary-green;
+        }
       }
     }
   }
@@ -109,18 +111,22 @@ a {
 }
 
 .sustainable-forestry {
-  align-content: center;
   background: url('../img/backgrounds/forest_background_large.jpeg') fixed center / cover;
-  justify-items: center;
 }
 
 .business-services {
-  align-content: center;
   background: url('../img/backgrounds/wood_grain_large.jpeg') fixed center / cover;
-  justify-items: center;
+}
+
+.contact-us {
+  // background: url('../img/backgrounds/rampart_lakes_forest_sunset.jpg') fixed center / cover;
+  background-image: url('../img/backgrounds/rampart_lakes_forest_sunset.jpg');
+  background-size: cover;
+  background-position: center;
 }
 
 .canvas {
+  align-content: center;
   align-items: center;
   display: grid;
   grid-template-rows: 1fr;
@@ -168,6 +174,66 @@ a {
 
 .image-container {
   max-width: 250px;
+}
+
+.contact-us-main{
+  display: grid;
+  text-align: center;
+  align-content: center;
+  justify-content: center;
+  margin: 10px;
+}
+
+.horizontal-line-short {
+  width: 100px;
+  height: 1px;
+  margin: 10px;
+  background-color: $light-grey;
+  justify-self: center;
+}
+
+.contact-us-form {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-areas:
+          "first last"
+          "email phone"
+          "message message";
+  grid-template-columns: minmax(100px, 1fr) minmax(100px, 1fr);
+  grid-template-rows: 50px 50px 300px;
+  justify-content: center;
+  input, textarea {
+    outline: none;
+    font-size: medium;
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid $light-grey;
+    resize: none;
+  }
+  input:default {
+
+  }
+  input:focus:required:invalid {
+    border: 1px solid darkred;
+  }
+  input:valid {
+    border: 1px solid $dark-green;
+  }
+  #firstName {
+    grid-area: first;
+  }
+  #lastName {
+    grid-area: last;
+  }
+  #emailAddress {
+    grid-area: email;
+  }
+  #phoneNumber {
+    grid-area: phone;
+  }
+  #contactMessage {
+    grid-area: message;
+  }
 }
 
 .footer {
