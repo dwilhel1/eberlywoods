@@ -1,7 +1,7 @@
 // https://material.io/color/#!/?view.left=0&view.right=0&primary.color=43A047
 $invisible: rgba(0, 0 , 0 , 0);
 $light-grey: #d3d3d3;
-$transparent-white: rgba(255, 255, 255, .9);
+$transparent-white: rgba(255, 255, 255, 0.9);
 $white: #fff;
 $light-green: #43af47;
 $primary-green: #43a047;
@@ -11,7 +11,7 @@ $dark-red: #8b0000;
 
 * {
   box-sizing: border-box;
-  font-family: 'Raleway', 'Helvetica Neue', Arial, sans-serif;
+  font-family: "Raleway", "Helvetica Neue", Arial, sans-serif;
   user-select: none;
 }
 
@@ -57,19 +57,19 @@ a {
 
   .brand-logo-letter {
     display: none;
-}
+  }
 
   .brand-logo-full {
     display: flex;
     padding-bottom: 10px;
     padding-top: 10px;
-}
+  }
 
   .nav-title {
     flex: 1;
     font-size: 40px;
     justify-items: center;
-}
+  }
 
   .nav-menu {
     ul {
@@ -82,7 +82,7 @@ a {
       display: inline;
       margin: 5px;
       padding: 10px;
-      transition: .2s border ease-in, .1s color ease-in, .1s background-color ease-in;
+      transition: 0.2s border ease-in, 0.1s color ease-in, 0.1s background-color ease-in;
 
       &:hover {
         border: 1px solid $light-grey;
@@ -113,19 +113,19 @@ a {
 }
 
 .sustainable-forestry {
-  background: url('../img/backgrounds/forest_background_large.jpeg') center / cover;
+  background: url("../img/backgrounds/forest_background_large.jpeg") center / cover;
 }
 
 .business-services {
-  background: url('../img/backgrounds/wood_grain_large.jpeg') center / cover;
+  background: url("../img/backgrounds/wood_grain_large.jpeg") center / cover;
 }
 
 .contact-us-banner-top {
-  background: url('../img/backgrounds/rampart_lakes_forest_sunset.jpg') center / cover;
+  background: url("../img/backgrounds/rampart_lakes_forest_sunset.jpg") center / cover;
 }
 
 .contact-us-banner-bottom {
-  background: url('../img/backgrounds/rampart_lakes_forest_sunset_lower.jpg') center / cover;
+  background: url("../img/backgrounds/rampart_lakes_forest_sunset_lower.jpg") center / cover;
 }
 
 .canvas {
@@ -179,7 +179,7 @@ a {
   max-width: 250px;
 }
 
-.contact-us-main{
+.contact-us-main {
   display: grid;
   text-align: center;
   align-content: center;
@@ -199,13 +199,14 @@ a {
   display: grid;
   grid-gap: 10px;
   grid-template-areas:
-          "first last"
-          "email phone"
-          "message message";
+    "first last"
+    "email phone"
+    "message message";
   grid-template-columns: minmax(100px, 1fr) minmax(100px, 1fr);
   grid-template-rows: 50px 50px 300px;
   justify-content: center;
-  input, textarea {
+  input,
+  textarea {
     outline: none;
     font-size: medium;
     border-radius: 5px;
@@ -213,7 +214,7 @@ a {
     border: 1px solid $light-grey;
     resize: none;
     box-shadow: none;
-    transition: border 250ms ease
+    transition: border 250ms ease;
   }
   input:focus:required:invalid,
   textarea:focus:required:invalid {
@@ -250,7 +251,7 @@ a {
   border-radius: 2px;
   font-size: 16px;
   font-weight: 600;
-  box-shadow: 0 3px 1px -2px rgba(0,0,0,.2),0 2px 2px 0 rgba(0,0,0,.14),0 1px 5px 0 rgba(0,0,0,.12);
+  box-shadow: 0 3px 1px -2px rgba(0,0,0,0.2) ,0 2px 2px 0 rgba(0,0,0,0.14) ,0 1px 5px 0 rgba(0,0,0,0.12);
   margin-top: 10px;
   justify-self: center;
   transition: 100ms background-color ease-in;
