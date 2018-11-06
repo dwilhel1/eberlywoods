@@ -3,9 +3,11 @@ $invisible: rgba(0, 0 , 0 , 0);
 $light-grey: #d3d3d3;
 $transparent-white: rgba(255, 255, 255, .9);
 $white: #fff;
+$light-green: #43af47;
 $primary-green: #43a047;
 $dark-green: #00701a;
 $black: #000;
+$dark-red: #8b0000;
 
 * {
   box-sizing: border-box;
@@ -111,18 +113,19 @@ a {
 }
 
 .sustainable-forestry {
-  background: url('../img/backgrounds/forest_background_large.jpeg') fixed center / cover;
+  background: url('../img/backgrounds/forest_background_large.jpeg') center / cover;
 }
 
 .business-services {
-  background: url('../img/backgrounds/wood_grain_large.jpeg') fixed center / cover;
+  background: url('../img/backgrounds/wood_grain_large.jpeg') center / cover;
 }
 
-.contact-us {
-  // background: url('../img/backgrounds/rampart_lakes_forest_sunset.jpg') fixed center / cover;
-  background-image: url('../img/backgrounds/rampart_lakes_forest_sunset.jpg');
-  background-size: cover;
-  background-position: center;
+.contact-us-banner-top {
+  background: url('../img/backgrounds/rampart_lakes_forest_sunset.jpg') center / cover;
+}
+
+.contact-us-banner-bottom {
+  background: url('../img/backgrounds/rampart_lakes_forest_sunset_lower.jpg') center / cover;
 }
 
 .canvas {
@@ -209,30 +212,55 @@ a {
     padding: 10px;
     border: 1px solid $light-grey;
     resize: none;
+    box-shadow: none;
+    transition: border 250ms ease
   }
-  input:default {
-
+  input:focus:required:invalid,
+  textarea:focus:required:invalid {
+    border: 1px solid $light-green;
   }
-  input:focus:required:invalid {
-    border: 1px solid darkred;
-  }
-  input:valid {
+  input:valid,
+  textarea:valid {
     border: 1px solid $dark-green;
   }
-  #firstName {
+  .contact-us-firstName {
     grid-area: first;
   }
-  #lastName {
+  .contact-us-lastName {
     grid-area: last;
   }
-  #emailAddress {
+  .contact-us-emailAddress {
     grid-area: email;
   }
-  #phoneNumber {
+  .contact-us-phoneNumber {
     grid-area: phone;
   }
-  #contactMessage {
+  .contact-us-contactMessage {
     grid-area: message;
+  }
+}
+
+.contact-us-submit-button {
+  width: 100px;
+  height: 40px;
+  text-decoration: none;
+  border: none;
+  color: #fff;
+  background-color: $primary-green;
+  border-radius: 2px;
+  font-size: 16px;
+  font-weight: 600;
+  box-shadow: 0 3px 1px -2px rgba(0,0,0,.2),0 2px 2px 0 rgba(0,0,0,.14),0 1px 5px 0 rgba(0,0,0,.12);
+  margin-top: 10px;
+  justify-self: center;
+  transition: 100ms background-color ease-in;
+
+  &:hover {
+    background-color: $light-green;
+  }
+
+  &:active {
+    background-color: $dark-green;
   }
 }
 
