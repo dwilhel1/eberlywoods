@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  font-family: 'Raleway', 'Helvetica Neue', Arial, sans-serif;
+  font-family: "Raleway", "Helvetica Neue", Arial, sans-serif;
   user-select: none; }
 
 html,
@@ -55,7 +55,7 @@ a {
     display: inline;
     margin: 5px;
     padding: 10px;
-    transition: .2s border ease-in, .1s color ease-in, .1s background-color ease-in; }
+    transition: 0.2s border ease-in, 0.1s color ease-in, 0.1s background-color ease-in; }
     .header .nav-menu li:hover {
       border: 1px solid #d3d3d3; }
     .header .nav-menu li:active {
@@ -147,7 +147,8 @@ a {
   grid-template-columns: minmax(100px, 1fr) minmax(100px, 1fr);
   grid-template-rows: 50px 50px 300px;
   justify-content: center; }
-  .contact-us-form input, .contact-us-form textarea {
+  .contact-us-form input,
+  .contact-us-form textarea {
     outline: none;
     font-size: medium;
     border-radius: 5px;
@@ -156,9 +157,6 @@ a {
     resize: none;
     box-shadow: none;
     transition: border 250ms ease; }
-  .contact-us-form input:focus:required:invalid,
-  .contact-us-form textarea:focus:required:invalid {
-    border: 1px solid #43af47; }
   .contact-us-form input:valid,
   .contact-us-form textarea:valid {
     border: 1px solid #00701a; }

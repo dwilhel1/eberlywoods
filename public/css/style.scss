@@ -216,10 +216,6 @@ a {
     box-shadow: none;
     transition: border 250ms ease;
   }
-  input:focus:required:invalid,
-  textarea:focus:required:invalid {
-    border: 1px solid $light-green;
-  }
   input:valid,
   textarea:valid {
     border: 1px solid $dark-green;

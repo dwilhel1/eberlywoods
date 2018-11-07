@@ -7,16 +7,20 @@
   <h1>Questions? Requests?</h1>
   <div class="horizontal-line-short"></div>
   <p>If you'd like to order lumber or start a conversation, please fill out the contact form below and we'll respond to you soon.</p>
-  <form class="contact-us-form">
+  <form class="contact-us-form" id="contact-us-form">
     <input required title="First Name" class="contact-us-firstName" type="text" name="firstName" placeholder="First Name*" min="2">
     <input required title="Last Name" class="contact-us-lastName" type="text" name="lastName" placeholder="Last Name*" min="2">
     <input required title="Email Address" class="contact-us-emailAddress" type="email" name="emailAddress" placeholder="Email Address*" min="4">
     <input required title="Phone Number" class="contact-us-phoneNumber" type="tel" name="phoneNumber" placeholder="Phone Number*" min="10">
     <textarea required title="Contact Message" class="contact-us-contactMessage" type="text" name="contactMessage" placeholder="Your message here..." minlength="20"></textarea>
   </form>
-  <button class="contact-us-submit-button" type="submit">Submit</button>
+  <button class="contact-us-submit-button" type="button">Submit</button>
 </div>
 <div class='contact-us-banner-bottom canvas'>
   <div class='canvas-text'>
   </div>
 </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<script src="js/contact.js"></script>

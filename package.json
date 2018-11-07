@@ -4,7 +4,8 @@
   "description": "Eberlywoods.com main website",
   "scripts": {
     "start": "node ./bin/server.js",
-    "csscomb": "csscomb public/css/*.scss"
+    "csscomb": "csscomb public/css/*.scss",
+    "lint": "eslint --ext .js ."
   },
   "repository": {
     "type": "git",
@@ -20,6 +21,7 @@
     "express": "~4.16.0",
     "hbs": "~4.0.1",
     "http-errors": "~1.6.2",
+    "joi": "^14.0.4",
     "morgan": "~1.9.0",
     "node-sass-middleware": "0.11.0"
   },
